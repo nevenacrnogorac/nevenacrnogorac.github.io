@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Sunset Painting",
+    "price": "$200",
+    "status": "available",
+    "image": "/images/sunset.jpg",
+    "description": "A beautiful painting of a sunset over the ocean."
+  },
+  {
+    "id": 2,
+    "title": "Mountain Landscape",
+    "price": "$300",
+    "status": "sold",
+    "image": "/images/mountain.jpg",
+    "description": "A breathtaking view of mountains during sunrise."
+  }
+]

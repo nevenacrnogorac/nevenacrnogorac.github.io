@@ -1,16 +1,47 @@
 ---
+import GalleryItem from "../components/GalleryItem";
+import artworks from "../data/artworks.json";
 ---
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coming Soon</title>
+    <title>Art Gallery</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-100 flex items-center justify-center h-screen text-center">
-    <div class="text-gray-800">
-      <h1 class="text-4xl font-bold">Coming Soon</h1>
-      <p class="text-lg mt-4">Stay tuned! We're working on something amazing.</p>
-    </div>
+  <body class="bg-gray-50 text-gray-900 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">Art Gallery</h1>
+        <nav>
+          <ul class="flex space-x-6 text-gray-700">
+            <li><a href="#home" class="hover:text-gray-900">Home</a></li>
+            <li><a href="#collections" class="hover:text-gray-900">Collections</a></li>
+            <li><a href="#about" class="hover:text-gray-900">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-10">
+      <div class="max-w-7xl mx-auto px-4">
+        <!-- Gallery Grid -->
+        <section id="gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {artworks.map((item) => (
+            <GalleryItem key={item.id} item={item} />
+          ))}
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6">
+      <div class="max-w-7xl mx-auto px-4 text-center text-sm text-gray-600">
+        © 2024 Art Gallery. All rights reserved.
+      </div>
+    </footer>
   </body>
 </html>
