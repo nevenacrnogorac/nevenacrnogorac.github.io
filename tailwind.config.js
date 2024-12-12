@@ -23,7 +23,7 @@ export default {
           secondary: "#f8f5f2",
           accent: "rgb(88,68,70)",
           neutral: "#f8f5f2", // Postavljamo braon za neutral
-          // "base-100": "#FFFFFF",
+          "base-100": "#f8f5f2",
           // "base-200": "#F5F5F5",
           // "base-300": "#E0E0E0",
           "base-content": "rgb(88,68,70)",
