@@ -2,29 +2,28 @@ import React from "react";
 
 const GalleryItem = ({ item }) => {
     return (
-        <article className="bg-white shadow rounded-lg overflow-hidden">
-            <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-60 object-cover"
-            />
-            <div className="p-4">
-                <h2 className="text-lg font-semibold">{item.title}</h2>
-                <p className="text-gray-500">Price: {item.price}</p>
-                <p className="mt-2 text-sm text-gray-600">{item.description}</p>
-                <div className="mt-4">
-                    {item.status === "available" ? (
-                        <span className="text-xs font-bold px-2 py-1 bg-green-200 text-green-800 rounded-full">
-              Available
-            </span>
+        <div className="card bg-primary w-full shadow-2xl">
+            <a href={item.url}>
+            <figure>
+                <img
+                    src={item.image}
+                    alt={item.name}/>
+            </figure>
+            <div className="card-body">
+                <h2 className="card-title">
+                    <div className="flex-1">{item.name}</div>
+                    {item.status === "NEW" ? (
+                        <div className="badge badge-primary">NEW</div>
                     ) : (
-                        <span className="text-xs font-bold px-2 py-1 bg-red-200 text-red-800 rounded-full">
-              Sold
-            </span>
-                    )}
+                        <div className="badge bedge-seconady">SOLD</div>)}
+
+                </h2>
+                <div className="card-actions justify-start">
+                    <div className="badge badge-outline">{item.category}</div>
                 </div>
             </div>
-        </article>
+            </a>
+        </div>
     );
 };
 
