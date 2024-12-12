@@ -12,7 +12,7 @@ const Landing = () => {
                 <div className="">
                     <h1 className="text-5xl font-bold">Art Gallery</h1>
                     <p className="py-6">
-                        Here you can buy created by Nevena Crnogorac, artist from Serbia.
+                        Here you can buy paintings created by Nevena Crnogorac, artist from Serbia.
                     </p>
                     <div className="grid lg:grid-cols-2 sm:grid-rows-2 gap-2">
                     <button className="btn btn-primary">Browse Gallery</button>
