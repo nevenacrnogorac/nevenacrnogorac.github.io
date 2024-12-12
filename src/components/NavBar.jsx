@@ -31,7 +31,7 @@ const NavBar = () => {
                     <li>
                         <details>
                             <summary>Gallery</summary>
-                            <ul className="bg-base-100 rounded-t-none p-2">
+                            <ul className="bg-base-100 rounded-t-none p-2 z-50">
                                 <li><a>2024</a></li>
                                 <li><a>2023</a></li>
                             </ul>
