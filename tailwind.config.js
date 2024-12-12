@@ -10,7 +10,8 @@ export default {
         'primary': '#f8f5f2',
         'primary-dark': 'rgb(88,68,70)',
         'accent': 'rgb(88,68,70)',
-        'neutral': '#f8f5f2'
+        'neutral': '#f8f5f2',
+        'image-border': '#e5bdad',
       },
     },
   },

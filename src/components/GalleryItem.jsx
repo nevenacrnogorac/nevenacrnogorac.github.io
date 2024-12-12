@@ -4,7 +4,7 @@ const GalleryItem = ({ item }) => {
     return (
         <div className="card bg-primary w-full">
             <a className="grid flex-1 items-end justify-end" href={item.url}>
-            <figure className="w-full py-1">
+            <figure className="w-full border-image-border bordered border-4">
                 <img
                     className="border-black bordered border-2"
                     src={item.image}
