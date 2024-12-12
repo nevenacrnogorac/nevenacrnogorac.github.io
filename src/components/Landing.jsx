@@ -4,7 +4,7 @@ import myImage from '../assets/images/cover.jpg'; // Prilagodite putanju
 
 const Landing = () => {
     return (
-        <div className="hero min-h-screen">
+        <div className="hero bg-primary">
             <div className="hero-content flex-col lg:flex-row-reverse ">
                 <img
                     src={myImage.src}
