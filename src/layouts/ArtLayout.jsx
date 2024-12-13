@@ -8,7 +8,7 @@ const ArtLayout  = () => {
     const [selectedImage, setSelectedImage] = useState('/assets/images/1.jpg')
 
     return (
-        <div className="py-12"><div
+        <div className="py-6"><div
                 className="grid lg:grid-cols-8 sm:grid-cols-1 gap-10 justify-center justify-items-center px-10">
 
                 <div className="card lg:col-span-4 lg:col-start-2 bg-primary items-center">
