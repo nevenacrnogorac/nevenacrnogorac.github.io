@@ -12,7 +12,7 @@ const NavBar = () => {
         <div className="divide-y-1">
             <div className="navbar bg-primary px-6 lg:px-12">
                 <div className="flex-1">
-                    <a className="btn btn-ghost normal-case text-xl">Nevena Crnogorac</a>
+                    <a className="btn btn-ghost normal-case text-xl" href="/" >Nevena Crnogorac</a>
                 </div>
                 <div className="flex-none lg:hidden">
                     {/* Hamburger meni za mobilne uređaje */}
@@ -44,10 +44,10 @@ const NavBar = () => {
                 <div className="flex-none hidden lg:flex">
                     {/* Glavni meni za desktop */}
                     <ul className="menu menu-horizontal px-1">
-                        <li>
-                            <details>
-                                <summary>Gallery</summary>
-                                <ul className="bg-base-100 rounded-t-none p-2 z-50">
+                        <li className="">
+                            <details className="dropdown dropdown-hover">
+                                <summary><a tabIndex={0} className="cursor-pointer" href="/gallery">Gallery</a></summary>
+                                <ul className="dropdown-content bg-primary shadow-2xl divide-y pr-2 z-50">
                                     <li><a>2024</a></li>
                                     <li><a>2023</a></li>
                                 </ul>
@@ -66,7 +66,7 @@ const NavBar = () => {
                         {/* Hamburger meni stavke */}
                         <li>
                             <details>
-                                <summary>Gallery</summary>
+                                <summary><a href="/gallery">Gallery</a></summary>
                                 <ul>
                                     <li><a>2024</a></li>
                                     <li><a>2023</a></li>

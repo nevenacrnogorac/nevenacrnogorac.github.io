@@ -12,16 +12,23 @@ const ArtLayout  = () => {
                 className="grid lg:grid-cols-8 sm:grid-cols-1 gap-10 justify-center justify-items-center px-10">
 
                 <div className="card lg:col-span-4 lg:col-start-2 bg-primary items-center">
-                        <figure className="border-image-border bordered border-4 relative w-2/3">
-                            <img
-                                className="border-stone-700 bordered border-2"
-                                src={selectedImage}
-                            />
-                        </figure>
-                        <div className="card-body flex-none">
-                            <h2 className="card-title justify-center">
-                                <div className="flex flex-1 justify-center hover:underline gap-4">
-                                    <figure className={ (selectedImage.toString().includes("1.jpg") ? "border-black bordered border-2 ": "") + "  max-h-lvh w-fit" } onClick={() => setSelectedImage('/assets/images/1.jpg')}>
+                    <a href="/gallery" className="flex pb-4 flex-1 w-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3}
+                             stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"/>
+                        </svg>
+
+                    </a>
+                    <figure className="border-image-border bordered border-4 relative w-2/3">
+                        <img
+                            className="border-stone-700 bordered border-2"
+                            src={selectedImage}
+                        />
+                    </figure>
+                    <div className="card-body flex-none">
+                        <h2 className="card-title justify-center">
+                            <div className="flex flex-1 justify-center hover:underline gap-4">
+                                <figure className={(selectedImage.toString().includes("1.jpg") ? "border-black bordered border-2 ": "") + "  max-h-lvh w-fit" } onClick={() => setSelectedImage('/assets/images/1.jpg')}>
                                         <img
                                             className=" "
                                             src="/assets/images/1.jpg"

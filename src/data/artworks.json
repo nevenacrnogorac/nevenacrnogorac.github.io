@@ -7,7 +7,7 @@
     "status": "NEW",
     "image": "/assets/images/1.jpg",
     "description": "Test desc",
-    "url": "#"
+    "url": "/art"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "status": "NEW",
     "image": "/assets/images/2.jpg",
     "description": "Test desc",
-    "url": "#"
+    "url": "/art"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "status": "NEW",
     "image": "/assets/images/3.jpg",
     "description": "Test desc",
-    "url": "#"
+    "url": "/art"
   },
   {
     "id": 4,
@@ -37,6 +37,6 @@
     "status": "NEW",
     "image": "/assets/images/4.jpg",
     "description": "Test desc",
-    "url": "#"
+    "url": "/art"
   }
 ]
