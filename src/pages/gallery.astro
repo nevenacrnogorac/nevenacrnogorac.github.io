@@ -1,9 +1,7 @@
 ---
 import NavBar from "../components/NavBar.jsx";
-import Landing from "../components/Landing.jsx"
-import GalleryItem from "../components/GalleryItem";
 import GalleryLayout from "../layouts/GalleryLayout"
-import myImage from '../assets/images/cover.jpg'; // Prilagodite putanju
+import Footer from "../components/Footer.jsx";
 import React from "react";
 ---
 <!DOCTYPE html>
@@ -15,12 +13,7 @@ import React from "react";
 </head>
 <body class="flex-1 flex-row w-full h-screen">
 <NavBar client:load/>
-<GalleryLayout>
-    <GalleryItem item={{'category': 'Memory from Travel', 'name': 'Art 1', 'status': 'NEW', 'price': '1000$', 'description': 'test desc', 'url': '#', 'image': '/assets/images/1.jpg'}} />
-    <GalleryItem item={{'category': 'Memory from Travel', 'name': 'Art 2', 'status': 'SOLD', 'price': '2000$', 'description': 'test desc',  'url': '#', 'image': '/assets/images/2.jpg'}} />
-    <GalleryItem item={{'category': 'Memory from childhood', 'name': 'Painting 3', 'status': 'NEW', 'price': '1500$', 'description': 'test desc',  'url': '#', 'image': '/assets/images/3.jpg'}} />
-    <GalleryItem item={{'category': 'Memory from childhood', 'name': 'Painting 4', 'status': 'SOLD', 'price': '1000$', 'description': 'test desc', 'url': '#', 'image': '/assets/images/4.jpg'}} />
-</GalleryLayout>
-<!--<HomeLayout />-->
+<GalleryLayout />
+<Footer />
 </body>
 </html>

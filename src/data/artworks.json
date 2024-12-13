@@ -1,18 +1,42 @@
 [
   {
     "id": 1,
-    "title": "Sunset Painting",
-    "price": "$200",
-    "status": "available",
-    "image": "/images/sunset.jpg",
-    "description": "A beautiful painting of a sunset over the ocean."
+    "category": "Memory from Travel",
+    "name": "Art 1",
+    "price": "1000$",
+    "status": "NEW",
+    "image": "/assets/images/1.jpg",
+    "description": "Test desc",
+    "url": "#"
   },
   {
     "id": 2,
-    "title": "Mountain Landscape",
-    "price": "$300",
-    "status": "sold",
-    "image": "/images/mountain.jpg",
-    "description": "A breathtaking view of mountains during sunrise."
+    "category": "Memory from Travel",
+    "name": "Art 2",
+    "price": "2000$",
+    "status": "NEW",
+    "image": "/assets/images/2.jpg",
+    "description": "Test desc",
+    "url": "#"
+  },
+  {
+    "id": 3,
+    "category": "Memory from childhood",
+    "name": "Painting 3",
+    "price": "1500$",
+    "status": "NEW",
+    "image": "/assets/images/3.jpg",
+    "description": "Test desc",
+    "url": "#"
+  },
+  {
+    "id": 4,
+    "category": "Memory from childhood",
+    "name": "Painting 4",
+    "price": "1000$",
+    "status": "NEW",
+    "image": "/assets/images/4.jpg",
+    "description": "Test desc",
+    "url": "#"
   }
 ]

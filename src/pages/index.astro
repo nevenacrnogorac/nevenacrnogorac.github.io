@@ -1,6 +1,7 @@
 ---
-// Import the BaseLayout
-import HomeLayout from '../layouts/HomeLayout.jsx';
+import NavBar from "../components/NavBar.jsx";
+import Footer from "../components/Footer.jsx";
+import Landing from "../components/Landing.jsx"
 import React from "react";
 ---
 
@@ -12,7 +13,9 @@ import React from "react";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nevena Crnogorac Portoflio</title>
 </head>
-<body class="bg-stone-50 flex-1 flex-row w-full h-screen">
-<HomeLayout />
+<body class="flex-1 flex-row w-full h-screen">
+<NavBar client:load/>
+<Landing />
+<Footer />
 </body>
 </html>
