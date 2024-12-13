@@ -9,7 +9,7 @@ const ArtLayout  = () => {
 
     return (
         <div className="py-6"><div
-                className="grid lg:grid-cols-8 sm:grid-cols-1 gap-10 justify-center justify-items-center px-10">
+                className="grid lg:grid-cols-8 sm:grid-cols-1 lg:gap-10 justify-center justify-items-center px-10">
 
                 <div className="card lg:col-span-4 lg:col-start-2 bg-primary items-center">
                     <a href="/gallery" className="flex pb-4 flex-1 w-full">
