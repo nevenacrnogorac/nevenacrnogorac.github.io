@@ -5,7 +5,7 @@ import myImage from '../assets/images/cover.jpg'; // Prilagodite putanju
 const Landing = () => {
     return (
         <div className="hero bg-primary max-h-lvh h-lvh pb-8">
-            <div className="hero-content grid flex-1 max-h-lvh h-lvh lg:grid-cols-2 two-column-summary gap-10 w-full">
+            <div className="hero-content grid flex-1 max-h-lvh h-lvh lg:grid-cols-2 two-column-summary gap-2 w-full">
                 <img
                     src={myImage.src}
                     className="lg:max-h-lvh md:max-h-lvh shadow-2xl"/>
