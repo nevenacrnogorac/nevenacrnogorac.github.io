@@ -4,12 +4,12 @@ import myImage from '../assets/images/cover.jpg'; // Prilagodite putanju
 
 const Landing = () => {
     return (
-        <div className="hero bg-primary py-6">
-            <div className="hero-content flex-col lg:flex-row-reverse ">
+        <div className="hero bg-primary py-6 max-h-lvh">
+            <div className="hero-content grid flex-1 lg:grid-cols-2 two-column-summary">
                 <img
                     src={myImage.src}
-                    className="lg:max-w-2xl shadow-2xl"/>
-                <div className="">
+                    className="lg:max-h-lvh md:max-h-lvh shadow-2xl"/>
+                <div className="lg:pl-10 p-4">
                     <h1 className="text-5xl font-bold">Art Gallery</h1>
                     <p className="py-6">
                         Here you can buy paintings created by Nevena Crnogorac, artist from Serbia.
