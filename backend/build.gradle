@@ -1,0 +1,83 @@
+plugins {
+    id("io.micronaut.application") version "4.6.1"
+    id("com.gradleup.shadow") version "8.3.9"
+    id("io.micronaut.aot") version "4.6.1"
+}
+
+version = "0.1"
+group = "com.nevenacrnogorac"
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+        showStandardStreams = true
+        exceptionFormat = "full"
+    }
+}
+
+dependencies {
+    annotationProcessor("io.micronaut.data:micronaut-data-processor")
+    annotationProcessor("io.micronaut:micronaut-http-validation")
+    annotationProcessor("io.micronaut.serde:micronaut-serde-processor")
+    implementation("io.micronaut.email:micronaut-email-javamail")
+    implementation("io.micronaut.reactor:micronaut-reactor")
+    implementation("io.micronaut:micronaut-http-client")
+    implementation("io.micronaut.serde:micronaut-serde-jackson")
+    implementation("io.micronaut.sql:micronaut-jdbc-hikari")
+    implementation("io.micronaut.data:micronaut-data-jdbc")
+    implementation("io.micronaut.flyway:micronaut-flyway")
+    implementation("jakarta.annotation:jakarta.annotation-api")
+    implementation("org.slf4j:slf4j-simple")
+    runtimeOnly("com.h2database:h2")
+    runtimeOnly("org.yaml:snakeyaml")
+    testImplementation("io.micronaut.test:micronaut-test-junit5")
+    testImplementation("org.junit.jupiter:junit-jupiter-api")
+    testImplementation("org.mockito:mockito-core")
+    testImplementation("org.mockito:mockito-junit-jupiter")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+}
+
+
+application {
+    mainClass = "com.nevenacrnogorac.Application"
+}
+java {
+    sourceCompatibility = JavaVersion.toVersion("21")
+    targetCompatibility = JavaVersion.toVersion("21")
+}
+
+
+graalvmNative.toolchainDetection = false
+
+micronaut {
+    runtime("netty")
+    testRuntime("junit5")
+    processing {
+        incremental(true)
+        annotations("com.nevenacrnogorac.*")
+    }
+    aot {
+        // Please review carefully the optimizations enabled below
+        // Check https://micronaut-projects.github.io/micronaut-aot/latest/guide/ for more details
+        optimizeServiceLoading = false
+        convertYamlToJava = false
+        precomputeOperations = true
+        cacheEnvironment = true
+        optimizeClassLoading = true
+        deduceEnvironment = true
+        optimizeNetty = true
+        replaceLogbackXml = true
+    }
+}
+
+
+tasks.named("dockerfileNative") {
+    jdkVersion = "21"
+}
+
+

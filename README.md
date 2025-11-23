@@ -43,6 +43,27 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
+## 🔙 Backend (Micronaut)
+
+The backend is located in the `backend/` directory. It provides APIs for purchases, subscriptions, and image hosting.
+
+### Prerequisites
+- Java 21
+- Gradle (included via wrapper)
+
+### Running the Backend
+1. Navigate to the backend directory: `cd backend`
+2. Run the application: `./gradlew run`
+3. The server will start at `http://localhost:8080`.
+
+### Database
+- Uses H2 in-memory database with file persistence (`backend/gallery_db`).
+- Schema is managed by Flyway.
+
+### Image Hosting
+- Images are served from `~/gallery-images`.
+- Ensure this directory exists and contains images.
+
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
