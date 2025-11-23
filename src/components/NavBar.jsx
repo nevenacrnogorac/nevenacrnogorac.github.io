@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 const NavBar = () => {
 
@@ -48,7 +48,7 @@ const NavBar = () => {
                             <details className="dropdown dropdown-hover">
                                 <summary><a tabIndex={0} className="cursor-pointer" href="/gallery">Gallery</a></summary>
                                 <ul className="dropdown-content bg-primary shadow-2xl divide-y pr-2 z-50">
-                                    <li><a>2024</a></li>
+                                    <li><a>2025</a></li>
                                     <li><a>2023</a></li>
                                 </ul>
                             </details>
@@ -59,7 +59,7 @@ const NavBar = () => {
                 </div>
 
                 {/* Drawer za mobilni meni */}
-                <input id="menu-toggle" type="checkbox" className="drawer-toggle peer"/>
+                <input id="menu-toggle" type="checkbox" className="drawer-toggle peer" />
                 <div className="drawer-side lg:hidden py-16 z-50 peer-checked:visible">
                     <label htmlFor="menu-toggle" className="drawer-overlay h-screen" onClick={toggleMenu}></label>
                     <ul className="menu px-6 p-4 mx-100 w-screen bg-primary text-base-content">
@@ -68,7 +68,7 @@ const NavBar = () => {
                             <details>
                                 <summary><a href="/gallery">Gallery</a></summary>
                                 <ul>
-                                    <li><a>2024</a></li>
+                                    <li><a>2025</a></li>
                                     <li><a>2023</a></li>
                                 </ul>
                             </details>
@@ -78,7 +78,7 @@ const NavBar = () => {
                     </ul>
                 </div>
             </div>
-            <hr className="bg-stone-900 "/>
+            <hr className="bg-stone-900 " />
         </div>
     );
 };
