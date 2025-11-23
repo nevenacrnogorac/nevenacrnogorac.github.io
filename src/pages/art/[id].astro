@@ -1,0 +1,29 @@
+---
+import NavBar from "../../components/NavBar.jsx";
+import ArtLayout from "../../layouts/ArtLayout"
+import Footer from "../../components/Footer.jsx";
+import React from "react";
+import artworks from '../../data/artworks.json';
+
+export async function getStaticPaths() {
+  return artworks.map((artwork) => ({
+    params: { id: artwork.id.toString() },
+    props: { artwork },
+  }));
+}
+
+const { artwork } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{artwork.name} - Nevena Crnogorac Portfolio</title>
+</head>
+<body class="flex-1 flex-row w-full h-screen">
+<NavBar client:load/>
+<ArtLayout client:load artwork={artwork} />
+<Footer />
+</body>
+</html>

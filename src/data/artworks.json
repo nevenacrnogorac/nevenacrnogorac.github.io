@@ -7,7 +7,18 @@
     "status": "NEW",
     "image": "/assets/images/1.jpg",
     "description": "Test desc",
-    "url": "/art"
+    "url": "/art/1",
+    "year": "2024",
+    "dimensions": "165 x 190cm (65 x 74.8”)",
+    "medium": "mixed media on canvas, framed in sustainably grown flooded gum",
+    "additionalImages": [
+      "/assets/images/1.jpg",
+      "/assets/images/2.jpg",
+      "/assets/images/3.jpg",
+      "/assets/images/4.jpg"
+    ],
+    "shippingInfo": "shipping is not included within the price of the artworks and is calculated at the point of purchase. all artworks are carefully packaged and include transport insurance.",
+    "internationalInfo": "international buyers please note that artworks shipped outside of australia will be removed from their frame and shipped rolled. artworks will require professional framing once at their destination.\n\ninternational buyers please also note that customs may be charged on international (non-australian) purchases. the amount a customs authority may charge is dependent on the destination country and local laws. any fees, taxes or duties are the responsibility of the receiver and the receiver only. taxes are not charged on international purchases."
   },
   {
     "id": 2,
@@ -17,7 +28,15 @@
     "status": "NEW",
     "image": "/assets/images/2.jpg",
     "description": "Test desc",
-    "url": "/art"
+    "url": "/art/2",
+    "year": "2023",
+    "dimensions": "100 x 120cm",
+    "medium": "oil on canvas",
+    "additionalImages": [
+      "/assets/images/2.jpg"
+    ],
+    "shippingInfo": "Standard shipping applies.",
+    "internationalInfo": "Customs duties may apply."
   },
   {
     "id": 3,
@@ -27,7 +46,15 @@
     "status": "NEW",
     "image": "/assets/images/3.jpg",
     "description": "Test desc",
-    "url": "/art"
+    "url": "/art/3",
+    "year": "2024",
+    "dimensions": "50 x 70cm",
+    "medium": "acrylic on paper",
+    "additionalImages": [
+      "/assets/images/3.jpg"
+    ],
+    "shippingInfo": "Standard shipping applies.",
+    "internationalInfo": "Customs duties may apply."
   },
   {
     "id": 4,
@@ -37,6 +64,14 @@
     "status": "NEW",
     "image": "/assets/images/4.jpg",
     "description": "Test desc",
-    "url": "/art"
+    "url": "/art/4",
+    "year": "2022",
+    "dimensions": "80 x 80cm",
+    "medium": "oil on canvas",
+    "additionalImages": [
+      "/assets/images/4.jpg"
+    ],
+    "shippingInfo": "Standard shipping applies.",
+    "internationalInfo": "Customs duties may apply."
   }
 ]

@@ -13,15 +13,15 @@ const GalleryItem = ({ item }) => {
                     <img
                         className="border-stone-700 bordered border-2"
                         src={item.image}
-                        alt={item.name}/>
+                        alt={item.name} />
 
                     {ele}
                 </figure>
                 <div className="card-body flex-none">
-                <h2 className="card-title justify-center">
-                    <div className="flex flex-1 justify-center hover:underline">{item.name}</div>
-                </h2>
-            </div>
+                    <h2 className="card-title justify-center">
+                        <div className="flex flex-1 justify-center hover:underline">{item.name}</div>
+                    </h2>
+                </div>
             </a>
         </div>
     );
